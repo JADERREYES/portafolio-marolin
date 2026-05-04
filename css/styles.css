@@ -488,6 +488,9 @@ ul {
 
 .video-frame {
   position: relative;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid var(--border-gold);
@@ -495,14 +498,30 @@ ul {
     linear-gradient(180deg, rgba(212, 175, 55, 0.05), transparent 22%),
     linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(17, 24, 39, 0.95));
   box-shadow: var(--shadow-strong);
+  overflow: hidden;
 }
 
+.video-cv,
 .video-frame video {
   width: 100%;
+  max-width: 900px;
+  height: auto;
   aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
   border-radius: calc(var(--radius) - 10px);
-  background: #080d17;
+  background: #000;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
   object-fit: cover;
+}
+
+.video-wrapper,
+.video-card {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .script-card {
